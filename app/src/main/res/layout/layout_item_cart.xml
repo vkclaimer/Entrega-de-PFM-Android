@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="horizontal"
+    android:paddingStart="10dp"
+    android:paddingEnd="10dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:background="@drawable/border_bottom_gray"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:layout_gravity="center_vertical"
+            android:id="@+id/iw_product"
+            android:layout_width="60dp"
+            android:layout_height="60dp"/>
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_marginStart="10dp"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:layout_gravity="center_vertical"
+                android:orientation="vertical"
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <androidx.appcompat.widget.LinearLayoutCompat
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <com.app.daintybox.customviews.TextViewCustom
+                        android:id="@+id/tw_product_name"
+                        android:text="Sprite can"
+                        android:textColor="@color/black"
+                        android:textSize="14dp"
+                        app:fontName="semibold"
+                        android:layout_weight="1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"/>
+
+                    <ImageView
+                        android:id="@+id/iw_delete"
+                        android:paddingStart="10dp"
+                        android:paddingEnd="10dp"
+                        android:paddingBottom="2dp"
+                        android:paddingTop="2dp"
+                        android:layout_gravity="center_vertical"
+                        android:src="@drawable/ic_close_gray"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+
+                </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+                <com.app.daintybox.customviews.TextViewCustom
+                    android:id="@+id/tw_product_description"
+                    android:text="325ml, Price"
+                    android:textColor="@color/text_gray"
+                    android:textSize="13dp"
+                    app:fontName="semibold"
+                    android:layout_marginTop="4dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <androidx.appcompat.widget.LinearLayoutCompat
+                    android:orientation="horizontal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+
+                    <RelativeLayout
+                        android:id="@+id/btn_minus"
+                        android:background="@drawable/ripple_cantidad_item"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:layout_marginStart="8dp"
+                            android:layout_marginTop="8dp"
+                            android:layout_marginEnd="8dp"
+                            android:layout_marginBottom="8dp"
+                            android:src="@drawable/ic_menos" />
+
+                    </RelativeLayout>
+
+                    <com.app.daintybox.customviews.TextViewCustom
+                        android:id="@+id/tw_cantidad"
+                        app:fontName="semibold"
+                        android:textColor="@color/black"
+                        android:textSize="14dp"
+                        android:text="99"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginEnd="10dp"
+                        android:layout_gravity="center_vertical"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+
+                    <RelativeLayout
+                        android:id="@+id/btn_plus"
+                        android:background="@drawable/ripple_cantidad_item"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp">
+
+                        <ImageView
+                            android:layout_centerInParent="true"
+                            android:src="@drawable/ic_mas"
+                            android:layout_margin="8dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"/>
+
+                    </RelativeLayout>
+
+
+                </androidx.appcompat.widget.LinearLayoutCompat>
+
+                <com.app.daintybox.customviews.TextViewCustom
+                    android:id="@+id/tw_price"
+                    android:text="$1.50"
+                    android:textColor="@color/black"
+                    android:textSize="14dp"
+                    app:fontName="semibold"
+                    android:drawablePadding="8dp"
+                    android:layout_gravity="center_vertical"
+                    android:gravity="end"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+</androidx.appcompat.widget.LinearLayoutCompat>

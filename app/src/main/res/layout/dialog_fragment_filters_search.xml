@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.app.daintybox.customviews.TextViewCustom
+            android:text="Filtros"
+            android:textSize="18dp"
+            android:gravity="center"
+            app:fontName="semibold"
+            android:textColor="@color/black"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"/>
+
+        <ImageView
+            android:id="@+id/iw_close"
+            android:background="@null"
+            android:src="@drawable/ic_close_gray"
+            app:tint="@color/black"
+            android:paddingStart="10dp"
+            android:paddingEnd="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="35dp"/>
+
+    </RelativeLayout>
+
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:background="@drawable/box_filters_options"
+        android:layout_marginTop="25dp"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:paddingEnd="15dp"
+        android:paddingStart="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ScrollView
+            android:scrollbars="none"
+            android:layout_weight="1"
+            android:paddingTop="25dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <com.app.daintybox.customviews.TextViewCustom
+                    android:text="Categorias"
+                    android:textColor="@color/black"
+                    app:fontName="semibold"
+                    android:textSize="18dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+                <com.app.daintybox.customviews.CheckBoxCustom
+                    android:id="@+id/checkbox_beverages"
+                    android:text="@string/section_beverage"
+                    android:textColor="@color/black"
+                    app:fontName="semibold"
+                    android:textSize="16dp"
+                    android:layout_marginTop="10dp"
+                    android:button="@null"
+                    android:background="@null"
+                    android:drawableStart="@drawable/selector_checkbox"
+                    android:drawableLeft="@drawable/selector_checkbox"
+                    android:drawablePadding="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+                <com.app.daintybox.customviews.CheckBoxCustom
+                    android:id="@+id/checkbox_fruits"
+                    android:text="@string/section_fruits"
+                    android:textColor="@color/black"
+                    app:fontName="semibold"
+                    android:textSize="16dp"
+                    android:layout_marginTop="10dp"
+                    android:button="@null"
+                    android:background="@null"
+                    android:drawableStart="@drawable/selector_checkbox"
+                    android:drawableLeft="@drawable/selector_checkbox"
+                    android:drawablePadding="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+                <com.app.daintybox.customviews.CheckBoxCustom
+                    android:id="@+id/checkbox_meat"
+                    android:text="@string/section_meat"
+                    android:textColor="@color/black"
+                    app:fontName="semibold"
+                    android:textSize="16dp"
+                    android:layout_marginTop="10dp"
+                    android:button="@null"
+                    android:background="@null"
+                    android:drawableStart="@drawable/selector_checkbox"
+                    android:drawableLeft="@drawable/selector_checkbox"
+                    android:drawablePadding="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+                <com.app.daintybox.customviews.CheckBoxCustom
+                    android:id="@+id/checkbox_eggs"
+                    android:text="@string/section_chicken_eggs"
+                    android:textColor="@color/black"
+                    app:fontName="semibold"
+                    android:textSize="16dp"
+                    android:layout_marginTop="10dp"
+                    android:button="@null"
+                    android:background="@null"
+                    android:drawableStart="@drawable/selector_checkbox"
+                    android:drawableLeft="@drawable/selector_checkbox"
+                    android:drawablePadding="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+                <com.app.daintybox.customviews.CheckBoxCustom
+                    android:id="@+id/checkbox_herbs"
+                    android:text="@string/section_herbs"
+                    android:textColor="@color/black"
+                    app:fontName="semibold"
+                    android:textSize="16dp"
+                    android:layout_marginTop="10dp"
+                    android:button="@null"
+                    android:background="@null"
+                    android:drawableStart="@drawable/selector_checkbox"
+                    android:drawableLeft="@drawable/selector_checkbox"
+                    android:drawablePadding="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+                <com.app.daintybox.customviews.CheckBoxCustom
+                    android:id="@+id/checkbox_combos"
+                    android:text="@string/section_combos"
+                    android:textColor="@color/black"
+                    app:fontName="semibold"
+                    android:textSize="16dp"
+                    android:layout_marginTop="10dp"
+                    android:button="@null"
+                    android:background="@null"
+                    android:drawableStart="@drawable/selector_checkbox"
+                    android:drawableLeft="@drawable/selector_checkbox"
+                    android:drawablePadding="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+                <com.app.daintybox.customviews.TextViewCustom
+                    android:text="Marca"
+                    android:textColor="@color/black"
+                    app:fontName="semibold"
+                    android:textSize="18dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+                <com.app.daintybox.customviews.CheckBoxCustom
+                    android:id="@+id/checkbox_pretelt"
+                    android:text="Pretelt"
+                    android:textColor="@color/black"
+                    app:fontName="semibold"
+                    android:textSize="16dp"
+                    android:layout_marginTop="10dp"
+                    android:button="@null"
+                    android:background="@null"
+                    android:drawableStart="@drawable/selector_checkbox"
+                    android:drawableLeft="@drawable/selector_checkbox"
+                    android:drawablePadding="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+                <com.app.daintybox.customviews.CheckBoxCustom
+                    android:id="@+id/checkbox_cocacola"
+                    android:text="Coca cola"
+                    android:textColor="@color/black"
+                    app:fontName="semibold"
+                    android:textSize="16dp"
+                    android:layout_marginTop="10dp"
+                    android:button="@null"
+                    android:background="@null"
+                    android:drawableStart="@drawable/selector_checkbox"
+                    android:drawableLeft="@drawable/selector_checkbox"
+                    android:drawablePadding="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+        </ScrollView>
+
+
+        <com.app.daintybox.customviews.ButtonCustom
+            android:id="@+id/btn_apply"
+            android:background="@drawable/ripple_btn_green_cane"
+            android:textAllCaps="false"
+            app:fontName="semibold"
+            android:text="Apply filter"
+            android:textSize="16dp"
+            style="@style/Widget.AppCompat.Button.Borderless"
+            android:layout_marginBottom="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+</androidx.appcompat.widget.LinearLayoutCompat>

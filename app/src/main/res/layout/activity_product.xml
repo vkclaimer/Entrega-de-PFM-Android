@@ -1,0 +1,274 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <ScrollView
+        android:id="@+id/sc_main"
+        android:visibility="gone"
+        android:scrollbars="none"
+        android:background="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:paddingBottom="100dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintDimensionRatio="4:3">
+
+                    <ImageView
+                        android:src="@drawable/background_vp_product"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent" />
+
+                    <androidx.viewpager.widget.ViewPager
+                        android:id="@+id/vp_product_images"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent" />
+
+                    <com.viewpagerindicator.LinePageIndicator
+                        android:id="@+id/lp_indicator_p_images"
+                        android:layout_height="wrap_content"
+                        android:layout_width="match_parent"
+                        app:strokeWidth="2dp"
+                        android:layout_marginEnd="15dp"
+                        android:layout_marginStart="15dp"
+                        android:layout_marginBottom="8dp"
+                        android:layout_alignParentBottom="true"
+                        app:unselectedColor="#cdcdcd"
+                        app:selectedColor="#53B175"/>
+
+                </RelativeLayout>
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:orientation="horizontal"
+                android:layout_marginTop="20dp"
+                android:layout_marginHorizontal="15dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <com.app.daintybox.customviews.TextViewCustom
+                    android:id="@+id/tw_product_name"
+                    android:text="Naturel Red Apple"
+                    app:fontName="bold"
+                    android:textSize="24dp"
+                    android:textColor="@color/black"
+                    android:layout_width="match_parent"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"/>
+
+                <ImageButton
+                    android:id="@+id/ib_like"
+                    android:src="@drawable/ic_favorito_product"
+                    android:background="@null"
+                    android:layout_gravity="center_vertical"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+            <com.app.daintybox.customviews.TextViewCustom
+                android:id="@+id/tw_product_description"
+                android:text="1kg, Price"
+                app:fontName="bold"
+                android:textSize="15dp"
+                android:layout_marginHorizontal="15dp"
+                android:textColor="@color/text_gray"
+                android:layout_width="match_parent"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"/>
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:layout_marginHorizontal="15dp"
+                android:layout_marginTop="20dp"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <androidx.appcompat.widget.LinearLayoutCompat
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+                <com.app.daintybox.customviews.TextViewCustom
+                    android:id="@+id/tw_price"
+                    android:text="$4.99"
+                    android:textSize="20dp"
+                    android:textColor="@color/black"
+                    app:fontName="bold"
+                    android:layout_gravity="center_vertical"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:background="@drawable/border_top_gray"
+                android:layout_marginHorizontal="15dp"
+                android:layout_marginTop="20dp"
+                android:paddingTop="15dp"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <com.app.daintybox.customviews.TextViewCustom
+                    android:text="@string/product_detail"
+                    android:textColor="@color/black"
+                    android:drawableEnd="@drawable/ic_arrow_down_black"
+                    android:textSize="16dp"
+                    app:fontName="bold"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+                <com.app.daintybox.customviews.TextViewCustom
+                    android:id="@+id/tw_product_details"
+                    android:text="Apples are nutritious. Apples may be good for weight loss. apples may be good for your heart. As part of a healtful and varied diet."
+                    android:textColor="@color/text_gray"
+                    android:textSize="14dp"
+                    android:layout_marginTop="8dp"
+                    app:lineHeight="20dp"
+                    app:fontName="semibold"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:layout_marginHorizontal="15dp"
+                android:paddingTop="15dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/border_top_gray"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <com.app.daintybox.customviews.TextViewCustom
+                    android:text="@string/nutritions"
+                    android:textColor="@color/black"
+                    android:textSize="16dp"
+                    app:fontName="bold"
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+                <ImageView
+                    android:src="@drawable/ic_arrow_right_black"
+                    android:layout_gravity="center_vertical"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:layout_marginHorizontal="15dp"
+                android:paddingTop="15dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/border_top_gray"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <com.app.daintybox.customviews.TextViewCustom
+                    android:text="@string/reviews"
+                    android:textColor="@color/black"
+                    android:textSize="16dp"
+                    app:fontName="bold"
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+                <RatingBar
+                    style="@style/commentRatingBar"
+                    android:isIndicator="true"
+                    android:rating="4"
+                    android:numStars="5"
+                    android:layout_marginEnd="10dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_width="wrap_content"
+                    android:layout_height="14.5dp"/>
+
+                <ImageView
+                    android:src="@drawable/ic_arrow_right_black"
+                    android:layout_gravity="center_vertical"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1000dp"/>
+        </LinearLayout>
+
+    </ScrollView>
+
+    <View
+        android:id="@+id/v_status_bar_background"
+        android:background="@android:color/transparent"
+        android:layout_width="match_parent"
+        android:layout_height="25dp" />
+
+    <!-- vista del Toolbar actuando como actionbar -->
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar_daintybox"
+        android:layout_width="match_parent"
+        android:layout_height="?android:attr/actionBarSize"
+        android:background="@color/green_cane"
+        android:layout_marginTop="25dp"
+        android:minHeight="?android:attr/actionBarSize"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+        <include layout="@layout/header_actionbar_default" />
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <ProgressBar
+        android:id="@+id/loading"
+        android:visibility="visible"
+        android:layout_centerInParent="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <RelativeLayout
+        android:id="@+id/holder_btn_add_cart"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:visibility="gone"
+        android:background="@color/white"
+        android:paddingBottom="40dp"
+        android:paddingTop="15dp"
+        android:paddingHorizontal="15dp">
+
+        <com.app.daintybox.customviews.ButtonCustom
+            android:id="@+id/btn_add_cart"
+            style="?android:attr/borderlessButtonStyle"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:background="@drawable/ripple_btn_green_cane"
+            android:text="@string/add_to_basket"
+            android:textAllCaps="false"
+            android:textColor="@color/black"
+            android:textSize="20dp"
+            app:fontName="bold" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

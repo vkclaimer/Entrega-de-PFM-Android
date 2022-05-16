@@ -1,0 +1,44 @@
+<resources>
+    <string name="app_name">daintybox</string>
+
+
+    <string name="login_title_1">Bienvenido a</string>
+    <string name="login_title_2">nuestra Tienda</string>
+    <string name="login_desc">Productos organicos y veganos</string>
+    <string name="btn_registro">Registrarme</string>
+    <string name="btn_iniciar_sesion">Iniciar sesión</string>
+    <string name="ini_sesion_title">Acceso a tu cuenta</string>
+    <string name="ini_sesion_subtitle">Ingrese sus credenciales para continuar</string>
+    <string name="et_email">Email</string>
+    <string name="et_email_hint">Correo Electronico</string>
+    <string name="et_password">Contraseña</string>
+    <string name="et_password_hint">***</string>
+    <string name="forgot_password">¿Has olvidado tu contraseña?</string>
+    <string name="no_account">No tienes una cuenta?</string>
+    <string name="btn_registrate">Registrate</string>
+    <string name="frag_tienda">Tienda</string>
+    <string name="frag_explorar">Explorar</string>
+    <string name="frag_carrito">Carrito</string>
+    <string name="frag_perfil">Tu perfil</string>
+    <string name="frag_favoritos">Favoritos</string>
+    <string name="product_detail">Detalles del productor</string>
+    <string name="nutritions">Nutrientes</string>
+    <string name="reviews">Comentarios</string>
+    <string name="add_to_basket">Agregar al carrito</string>
+    <string name="exclusive_offer">Ofertas</string>
+    <string name="best_selling">Mas vendidos</string>
+    <string name="favorites">Favoritos</string>
+    <string name="cart">Carrito</string>
+    <string name="empty_favorites">No hay favoritos agregados</string>
+    <string name="empty_cart">No hay articulos agregados</string>
+    <string name="log_out">Cerrar Sesión</string>
+    <string name="item_added_cart">Articulo agregado al carrito</string>
+
+
+    <string name="section_beverage">Bebidas</string>
+    <string name="section_fruits">Frutas y Vegetal</string>
+    <string name="section_meat">Carne &amp; Pescados</string>
+    <string name="section_chicken_eggs">Pollo y huevos</string>
+    <string name="section_combos">Combos</string>
+    <string name="section_herbs">Hierbas</string>
+</resources>

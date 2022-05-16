@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@drawable/border_total_gray_round"
+    android:padding="10dp"
+    android:layout_width="match_parent"
+    android:layout_height="200dp">
+
+    <ImageView
+        android:id="@+id/iw_product"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="10dp"
+        android:layout_width="100dp"
+        android:layout_height="80dp"/>
+
+    <com.app.daintybox.customviews.TextViewCustom
+        android:id="@+id/tw_product_name"
+        android:text="Organic Bananas"
+        android:textColor="@color/black"
+        app:fontName="semibold"
+        android:textSize="13sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <com.app.daintybox.customviews.TextViewCustom
+        android:id="@+id/tw_product_description"
+        android:text="7pcs, Priceg"
+        android:textColor="@color/text_gray"
+        app:fontName="semibold"
+        android:textSize="12sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.app.daintybox.customviews.TextViewCustom
+            android:id="@+id/tw_price"
+            android:text="$4.99"
+            android:layout_gravity="center_vertical"
+            android:textColor="@color/black"
+            android:textSize="15sp"
+            app:fontName="semibold"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <androidx.appcompat.widget.AppCompatImageButton
+            android:id="@+id/ib_add_cart"
+            android:background="@drawable/ripple_btn_green_plus"
+            android:src="@drawable/ic_plus_white"
+            android:layout_width="40dp"
+            android:layout_height="40dp"/>
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+</androidx.appcompat.widget.LinearLayoutCompat>

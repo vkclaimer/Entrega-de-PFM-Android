@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/btn_tienda"
+        android:enabled="true"
+        android:icon="@drawable/ic_nav_bottom_tienda"
+        android:title="@string/frag_tienda"
+        app:showAsAction="always" />
+    <item
+        android:id="@+id/btn_explorar"
+        android:enabled="true"
+        android:icon="@drawable/ic_nav_bottom_explorar"
+        android:title="@string/frag_explorar"
+        app:showAsAction="always" />
+    <item
+        android:id="@+id/btn_carrito"
+        android:enabled="true"
+        android:icon="@drawable/ic_nav_bottom_carrito"
+        android:title="@string/frag_carrito"
+        app:showAsAction="always" />
+    <item
+        android:id="@+id/btn_favoritos"
+        android:enabled="true"
+        android:icon="@drawable/ic_nav_bottom_favoritos"
+        android:title="@string/frag_favoritos"
+        app:showAsAction="always" />
+    <item
+        android:id="@+id/btn_perfil"
+        android:enabled="true"
+        android:icon="@drawable/ic_nav_bottom_perfil"
+        android:title="@string/frag_perfil"
+        app:showAsAction="always" />
+</menu>
